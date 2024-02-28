@@ -8,8 +8,8 @@ public class Main {
         Course kimya = new Course("Kimya", "KMY101", "KMY");
 
         Student s1 = new Student("Beyzanur", 4, "140144015", mat, fizik, kimya);
-        s1.addBulkExamNote(50,20,40);
-        s1.addbulkverbalnotes(50, 70, 100);
+        s1.addBulkExamNote(90,80,70,100,50,70);
+
         s1.isPass();
 
     }
