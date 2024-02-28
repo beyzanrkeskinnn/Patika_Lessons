@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Week_2/OgrenciNotSistemi/OgrenciNotSistemi.iml" filepath="$PROJECT_DIR$/Week_2/OgrenciNotSistemi/OgrenciNotSistemi.iml" />
       <module fileurl="file://$PROJECT_DIR$/Patika_Lessons.iml" filepath="$PROJECT_DIR$/Patika_Lessons.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_2/Week_2.iml" filepath="$PROJECT_DIR$/Week_2/Week_2.iml" />
     </modules>
