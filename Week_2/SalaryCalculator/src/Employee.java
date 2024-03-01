@@ -14,6 +14,8 @@ public class Employee {
     this.workHours=workHours;
 
     }
+
+    //Calculate tax applied to salary
      void tax (){
         if(this.salary>0 && this.salary<1000){
             this.tax =this.salary*0;
@@ -22,12 +24,15 @@ public class Employee {
 
         }
      }
+    //bonus salary for every additional hour worked
      void bonus() {
          if (this.workHours > 40) {
              this.bonus = 30 * (this.workHours - 40);
 
          }
      }
+
+     //Apply salary raise according to years
         void raiseSalary(){
             if(2021-hireYear<10){
                 this.raise=this.salary*0.5;
