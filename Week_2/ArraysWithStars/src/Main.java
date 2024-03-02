@@ -6,7 +6,7 @@ public class Main {
 
         for (int i = 0; i < letter.length; i++) {
             for (int j = 0; j < letter[i].length; j++) {
-                if (i == 0 || i == 3 || i==6) {
+                if (i == 0 || i == 3 || i == 6) {
                     letter[i][j] = " * ";
                 } else if (j == 0 || j == 3) {
                     letter[i][j] = " * ";
@@ -22,5 +22,6 @@ public class Main {
             }
             System.out.println();
         }
-    }}
+    }
+}
 
