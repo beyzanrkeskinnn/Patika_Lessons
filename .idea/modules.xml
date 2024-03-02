@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Week_2/ArraysWithStars/ArraysWithStars.iml" filepath="$PROJECT_DIR$/Week_2/ArraysWithStars/ArraysWithStars.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_2/BoxingGame/BoxingGame.iml" filepath="$PROJECT_DIR$/Week_2/BoxingGame/BoxingGame.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_2/HarmonikMean/HarmonikMean.iml" filepath="$PROJECT_DIR$/Week_2/HarmonikMean/HarmonikMean.iml" />
       <module fileurl="file://$PROJECT_DIR$/Week_2/MinandMaxCalculation/MinandMaxCalculation.iml" filepath="$PROJECT_DIR$/Week_2/MinandMaxCalculation/MinandMaxCalculation.iml" />
