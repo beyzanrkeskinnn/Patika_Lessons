@@ -1,13 +1,14 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-
     //find transpose of matrix element
-    static void transpoze(int[][] arr) {
-        int[][] trpz = new int[arr[0].length][arr.length];
-        for (int k = 0; k < arr.length; k++) {
-            for (int l = 0; l < arr[0].length; l++) {
-                trpz[l][k] = arr[k][l];
+    static void transpoze(int[][] matrix) {
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        int[][] trpz = new int[cols][rows];
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                trpz[col][row] = matrix[row][col];
             }
         }
         System.out.println("Transpozu: ");
