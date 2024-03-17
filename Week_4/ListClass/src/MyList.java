@@ -12,19 +12,19 @@ public class MyList<T> {
         this.capacity = capacity;
     }
 
-    // Boyutu getir
+    // Boyut
     public int size() {
         System.out.println("Dizinin boyutu : " + size);
         return size;
     }
 
-    // kapasiteyi getir
+    // Kapasite
     public int getCapacity() {
         System.out.println("Dizinin kapasitesi : " + capacity);
         return capacity;
     }
 
-    // Veriyi ekle
+    // Veri ekle
     public void add(T data) {
         if (size == capacity) {
             updateCapacity();
@@ -41,26 +41,6 @@ public class MyList<T> {
         capacity = newCapacity;
     }
 
-    public void print() {
-        getCapacity();
-        size();
-    }
-
-
-    // Listeyi yazdırma
-    @Override
-    public String toString() {
-        for (int i = 0; i < size; i++) {
-            System.out.println(array[i]);
-        }
-        return super.toString();
-    }
-
-
-    // Yeni bir Array oluştur
-    T[] toArray() {
-        return Arrays.copyOf(array, capacity);
-    }
 
 
 }
