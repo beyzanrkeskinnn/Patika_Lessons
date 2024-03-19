@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        int[] dizi = new int[]{15, 2, 3, 30, 80, 6, 7, 8, 9, 10, 11};
+        int[] array = new int[]{15, 2, 3, 30, 80, 6, 7, 8, 9, 10, 11};
         System.out.print("Bir değer giriniz : ");
         Scanner scan = new Scanner(System.in);
         // get index value
@@ -13,7 +13,7 @@ public class Main {
         //If an index that is not in the array is entered, the program gives an error message.
         try {
             System.out.println("İndex kontrol ediliyor. ");
-            int result = getElement(dizi, indis);
+            int result = getElement(array, indis);
             System.out.println("Tebrikler İndex değerini doğru girdiniz.");
             System.out.println("İndex elemanınız " + result);
         } catch (ArrayIndexOutOfBoundsException a) {
@@ -22,10 +22,10 @@ public class Main {
     }
 
     //If the index value is not in a valid range, throw ArrayIndexOutOfBoundsException and catch this exception.
-    public static int getElement(int[] dizi, int indis) {
-        if (indis < 0 || indis >= dizi.length) {
+    public static int getElement(int[] array, int indis) {
+        if (indis < 0 || indis >= array.length) {
             throw new ArrayIndexOutOfBoundsException("Hatalı index girdiniz ! ");
         }
-        return dizi[indis];
+        return array[indis];
     }
 }
