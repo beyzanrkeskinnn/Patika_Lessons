@@ -1,13 +1,17 @@
 import java.util.Comparator;
+import java.util.Date;
 
 public class Book implements Comparable<Book> {
     private String name;
     private int numberPage;
     private String author;
-    public Book(String name, int numberPage, String author) {
+    private String releaseDate;
+
+    public Book(String name, int numberPage, String author, String releaseDate) {
         this.name = name;
         this.numberPage = numberPage;
         this.author = author;
+        this.releaseDate=releaseDate;
     }
 
     //Sort a-z by book titles
@@ -49,8 +53,13 @@ public class Book implements Comparable<Book> {
         this.author = author;
     }
 
+    public String getReleaseDate() {
+        return releaseDate;
+    }
 
-
+    public void setReleaseDate(String releaseDate) {
+        this.releaseDate = releaseDate;
+    }
 }
 
 
