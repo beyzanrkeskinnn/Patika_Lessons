@@ -2,10 +2,11 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) {
-        String dosyaYolu = "D:\\Java\\Patika_Lessons\\Week_6\\NotePad\\src/NotePad.txt";
+        String dosyaYolu = "src/NotePad.txt";
 
         // Metni okumak için bir BufferedReader oluşturun
         BufferedReader reader;
+
         try {
             reader = new BufferedReader(new FileReader(dosyaYolu));
             String line = reader.readLine();
