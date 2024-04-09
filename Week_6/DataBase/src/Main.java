@@ -3,17 +3,17 @@ import java.sql.*;
 public class Main {
     public static void main(String[] args) {
         try {
-            // Veritabanına bağlanın
+            // Veritabanı bağlantısı
             Connection connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/employees", "postgres", "postgres");
 
-            // SQL sorgusu oluşturun
+            // SQL sorgusu
             String sql = "SELECT id, name, position, salary FROM employees";
 
-            // Sorguyu çalıştırın
+            // Sorguyu çalıştır
             Statement statement = connection.createStatement();
             ResultSet resultSet = statement.executeQuery(sql);
 
-            // Sonuçları işleyin
+            // Sonuçlar
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
@@ -23,7 +23,7 @@ public class Main {
                 System.out.println("ID: " + id + ", Name: " + name + ", Position: " + position + ", Salary: " + salary);
             }
 
-            // Bağlantıyı kapatın
+            // Bağlantıyı kapat
             resultSet.close();
             statement.close();
             connection.close();
